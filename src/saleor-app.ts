@@ -1,5 +1,6 @@
 import { SaleorApp } from "@saleor/app-sdk/saleor-app";
-import { APL, FileAPL, UpstashAPL } from "@saleor/app-sdk/APL";
+import { APL, UpstashAPL } from "@saleor/app-sdk/APL";
+import { _experimental_VercelKvApl } from "@saleor/app-sdk/APL/vercel-kv";
 
 /**
  * By default auth data are stored in the `.auth-data.json` (FileAPL).
@@ -15,7 +16,7 @@ switch (process.env.APL) {
     apl = new UpstashAPL();
     break;
   default:
-    apl = new FileAPL();
+    apl = new _experimental_VercelKvApl();
 }
 
 export const saleorApp = new SaleorApp({

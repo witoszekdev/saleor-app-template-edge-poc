@@ -1,6 +1,8 @@
-import { createAppRegisterHandler } from "@saleor/app-sdk/handlers/next";
+import { createAppRegisterHandler } from "@saleor/app-sdk/handlers/next-edge";
 
 import { saleorApp } from "../../saleor-app";
+
+export const runtime = "edge";
 
 /**
  * Required endpoint, called by Saleor to install app.
