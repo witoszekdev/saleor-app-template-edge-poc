@@ -19,7 +19,7 @@
     "pnpm": ">=8"
   },
   "dependencies": {
-    "@saleor/app-sdk": "0.0.0-pr-20240308115556",
+    "@saleor/app-sdk": "0.50.0",
     "@saleor/macaw-ui": "1.0.0",
     "@urql/exchange-auth": "^1.0.0",
     "@vercel/kv": "^1.0.1",
