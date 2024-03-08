@@ -1,6 +1,6 @@
 {
-  "name": "saleor-app-template",
-  "version": "1.0.0",
+  "name": "saleor-app-template-edge-poc",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "dev": "pnpm generate && NODE_OPTIONS='--inspect' next dev",
@@ -51,7 +51,7 @@
     "eslint-config-next": "13.1.2",
     "eslint-config-prettier": "^8.6.0",
     "prettier": "^2.8.2",
-    "typescript": "5.0.4"
+    "typescript": "5.4.2"
   },
   "lint-staged": {
     "*.{js,ts,tsx}": "eslint --cache --fix",
